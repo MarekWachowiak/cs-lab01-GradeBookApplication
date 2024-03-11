@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace GradeBook.GradeBooks
 {
-    //internal class StandardGradeBook : BaseGradeBook
-    //{
-    //    public BaseGradeBook(string name) : base(name)
-    //    {
-    //        Type = Enums.GradeBookType.Standard;
-    //    }
-    //}
+    internal class StandardGradeBook : BaseGradeBook
+    {
+
+        public StandardGradeBook(string name) : base(name)
+        {
+
+            Type = Enums.GradeBookType.Standard;
+        }
+    }
 }
