@@ -57,7 +57,7 @@ If you would rather use something other than Visual Studio
 
 **Note:** This isn't the only way to accomplish implementation, however; this is what the project's tests are expecting. Implementing the features in a different way will likely result in being marked as incomplete / incorrect.
 
-- [ ] Add support for Ranked Grading
+- [x] Add support for Ranked Grading
 
   - [x] Creating The `GradeBookType` Enum.
 
@@ -138,9 +138,9 @@ If you would rather use something other than Visual Studio
 
 - [ ] Add support for weighted GPAs
 
-  - [ ] Add `IsWeighted` property to `BaseGradeBook`
+  - [x] Add `IsWeighted` property to `BaseGradeBook`
 
-    - [ ] Create a new `bool` property named `IsWeighted` in `BaseGradeBook`
+    - [x] Create a new `bool` property named `IsWeighted` in `BaseGradeBook`
       - This should use the public access modifier.
       - This should be of type `bool`.
       - This should be named `IsWeighted`.
