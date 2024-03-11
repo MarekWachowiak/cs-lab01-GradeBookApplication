@@ -113,25 +113,25 @@ If you would rather use something other than Visual Studio
       - If there are less than 5 students write "Ranked grading requires at least 5 students." to the Console.
       - If there are 5 or more students call the base class's `CalculateStatistics` method using `base.CalculateStatistics`.
 
-  - [ ] Override `RankedGradeBook`'s `CalculateStudentStatistics` method
+  - [x] Override `RankedGradeBook`'s `CalculateStudentStatistics` method
 
-    - [ ] Short circuit the method if there are less than 5 students.
+    - [x] Short circuit the method if there are less than 5 students.
       - If there are less than 5 students write "Ranked grading requires at least 5 students." to the Console.
       - If there are 5 or more students call the base class's `CalculateStudentStatistics` method using `base.CalculateStudentStatistics`.
 
-  - [ ] Update `StartingUserInterface`'s `CreateCommand` method
+  - [x] Update `StartingUserInterface`'s `CreateCommand` method
 
-    - [ ] Update `CreateCommand`'s Conditions
+    - [x] Update `CreateCommand`'s Conditions
       - When checking the `parts.Length` it should check that `parts.Length` is not 3.
       - If `parts.Length` is not 3 write "Command not valid, Create requires a name and type of gradebook." to the Console.
-    - [ ] return a new GradeBook based on the provided type
+    - [x] return a new GradeBook based on the provided type
       - If the value of `parts[2]` is "standard" return a newly instantiated `StandardGradeBook` using the `name` variable.
       - If the value of `parts[2]` is "ranked" return a newly instantiated `RankedGradeBook` using the `name` variable.
       - If the value of `parts[2]` doesn't match the above write the value of `parts[2]` followed by " is not a supported type of gradebook, please try again" to the console, then escape the method.
 
-  - [ ] Update `StartingUserInterfaces`'s `HelpCommand` method
+  - [x] Update `StartingUserInterfaces`'s `HelpCommand` method
 
-    - [ ] Change where `HelpCommand` outlines the "create" command to write "Create 'Name' 'Type' - Creates a new gradebook where 'Name' is the name of the gradebook and 'Type' is what type of grading it should use." to the console.
+    - [x] Change where `HelpCommand` outlines the "create" command to write "Create 'Name' 'Type' - Creates a new gradebook where 'Name' is the name of the gradebook and 'Type' is what type of grading it should use." to the console.
 
   - [ ] Make the `BaseGradeBook` class abstract
     - [ ] Add the `abstract` keyword to the `BaseGradeBook` declaration.
