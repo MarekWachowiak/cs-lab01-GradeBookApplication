@@ -19,24 +19,29 @@ namespace GradeBook.GradeBooks
             {
                 throw new InvalidOperationException();
             }
-
-            var grades = Students.Select(x => x.AverageGrade).ToList();
-            grades = grades.OrderByDescending(x => x).ToList();
-            for ( var i = 0 ; i < grades.Count; i++ )
+            var grades = Students.Select(x => x.AverageGrade).OrderByDescending(x => x).ToList();
+            var top20Count = grades.Count / 5f;
+            var scoredHigherCount = 0f;
+            var finalGrade = 5;
+            foreach ( var currentGrade in grades )
             {
-                if (grades[i] <= averageGrade)
+                if (averageGrade >= currentGrade) break;
+
+                scoredHigherCount++;
+                if (scoredHigherCount >= top20Count)
                 {
-                    return i switch
-                    {
-                        0 => 'A',
-                        1 => 'B',
-                        2 => 'C',
-                        3 => 'D',
-                        _ => 'F'
-                    };
+                    scoredHigherCount -= top20Count;
+                    finalGrade--;
                 }
             }
-            return 'F';
+            return finalGrade switch
+            {
+                5 => 'A',
+                4 => 'B',
+                3 => 'C',
+                2 => 'D',
+                _ => 'F'
+            };
         }
         public override void CalculateStatistics()
         {
