@@ -136,7 +136,7 @@ If you would rather use something other than Visual Studio
   - [x] Make the `BaseGradeBook` class abstract
     - [x] Add the `abstract` keyword to the `BaseGradeBook` declaration.
 
-- [ ] Add support for weighted GPAs
+- [x] Add support for weighted GPAs
 
   - [x] Add `IsWeighted` property to `BaseGradeBook`
 
@@ -145,7 +145,7 @@ If you would rather use something other than Visual Studio
       - This should be of type `bool`.
       - This should be named `IsWeighted`.
 
-  - [ ] Refactor constructor of `BaseGradeBook`
+  - [x] Refactor constructor of `BaseGradeBook`
         _Note, once this group of tasks is begun the code will not compile until the entire group of tasks is complete._
 
     - [x] Add a `bool` to the `BaseGradeBook` constructor
